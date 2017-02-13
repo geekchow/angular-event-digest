@@ -118,10 +118,10 @@ module.exports = function (_path) {
       }),
        new webpack.ProvidePlugin({
            
-           $: 'jquery',
-           jQuery: 'jquery',
-           'window.jQuery': 'jquery',
-           'window.jquery': 'jquery',
+          //  $: 'jquery',
+          //  jQuery: 'jquery',
+          //  'window.jQuery': 'jquery',
+          //  'window.jquery': 'jquery',
            
            
            
