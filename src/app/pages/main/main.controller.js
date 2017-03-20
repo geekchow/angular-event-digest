@@ -24,6 +24,10 @@ function MainController($log, $rootScope, $scope, $document) {
     $scope.$emit('test:event');
   }
 
+  $scope.$on('test:event', (e) => {
+    $log.info('current scope event handler', e);
+  });
+
   const self = this;
   angular.element(() => {
     const root = self.$document[0].querySelector('#rootBtn');
